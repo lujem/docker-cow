@@ -10,7 +10,7 @@ docker run \
 --name=cow \
 --volume=$HOME/.cow:/.cow \
 --net=host \
-lujem/docker-cow \
+nasermirzaei89/docker-cow \
 /cow -rc=/.cow/rc
 ```
 must mount rc path to container rc path.
