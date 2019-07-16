@@ -1,16 +1,20 @@
 # Docker COW
+
 COW (Climb Over the Wall) proxy on Docker
 
 ## Instruction
-For run:
-```sh
+
+### Run:
+
+```bash
 docker run \
 --detach \
 --restart=always \
 --name=cow \
 --volume=$HOME/.cow:/.cow \
 --net=host \
-nasermirzaei89/docker-cow \
+nasermirzaei89/cow \
 /cow -rc=/.cow/rc
 ```
-must mount rc path to container rc path.
+
+You must mount `rc` path to container `rc` path.
